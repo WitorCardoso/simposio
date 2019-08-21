@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" type="text/css" href="../css/navfooter.css">
+<link rel="stylesheet" type="text/css" href="../css/textos.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<link rel="icon" type="imagem/png" href="../img/logo.png" />
+  <title>SETEC - Apresentação</title>
+</head>
+
+<body>
+
+
+  
+  <!-- Fixed navbar -->
+  <nav id="topNav" class="navbar navbar-default navbar-expand-lg">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#bs-navbar">
+
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse" id="bs-navbar">
+        <ul class="nav navbar-nav navbar-expand-lg">
+          <li><a href="../index.html" class="smoothscroll">Home</a></li>
+          <li><a href="apresentacao.html" class="smoothscroll">Apresentação</a></li>
+          <li><a href="crono.html" class="smoothscroll">Cronograma</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Orientações<span class="caret"></span></a>
+            <ul class="dropdown-menu" style="width: 206px !important;">
+              <li><a id="resumo">Resumo</a></li>
+              <li><a id="completo">Trabalho Completo</a></li>
+            </ul>
+          </li>
+          <li><a href="mesas.html" class="smoothscroll">Mesas Temáticas</a></li>
+          <li><a href="organizadores.html" class="smoothscroll">Organizadores</a></li>
+            
+        </ul>
+        
+      </div>
+      <button class="btn-lg signIn" href="#" role="button" onclick="signIn()"><span>Login com o Google <i class="fab fa-google"></i></span></button>
+    </div>
+  </nav>
+
+<div class="container apresentacao">
+  <div class="col">
+    <div class="callout">
+      <h2 class="active">Apresentação</h2>
+      <hr>
+      <p>O I Seminário Educação e Tecnologia: Diálogos e Interfaces, ocorrerá entre os dias 01 e 04 de outubro nas dependências do Instituto Federal de Mato Grosso do Sul, campus Dourados. 
+Os objetivos principais deste Seminário são a promoção, divulgação e incentivo à pratica da pesquisa no âmbito da relação entre Educação e Tecnologias.
+Marcado por uma metodologia de ensino multidisciplinar, que envolvem docentes e pesquisadores de áreas variadas do conhecimento, o Instituto Federal de Mato Grosso do Sul, campus Dourados, sediará o Seminário na intenção de ser um espaço de reflexão acerca das possibilidades e desafios dos diálogos e interfaces da educação com a tecnologia, além de apresentar e estimular o uso de iniciativas inovadoras de tecnologias digitais para aprimoramento dos conteúdos e abordagens educativas através do diálogo interdisciplinar.
+O município de Dourados tem como uma de suas principais características ser uma cidade universitária, marcada pela presença de grandes faculdades em seu perímetro urbano, o que promove a presença constante de professores, pesquisadores e estudantes que dinamizam a produção científica e cultural na região. Todos(as) estes(as) profissionais que se interessarem nas temáticas do I Seminário Educação e Tecnologia: Diálogos e Interfaces serão muito bem vindos ao evento, além é claro dos interessados de outras cidades da região, do Estado de Mato Grosso do Sul, do Brasil e da fronteira com o Paraguai, que possibilitarão um amplo diálogo e trocas de experiências durante e após o Seminário. Nosso público alvo são professores da rede estadual e municipal, professores das universidades e faculdades, alunos de graduação, especialização, mestrado, doutorado e pós-doutorado de toda a região, fato este que condiz com o caráter extensionista deste evento que recebe o apoio da Pró Reitoria de Extensão (PROEX) do IFMS por meio do Edital 012/2019.
+Salientamos que todos os cursos possuem uma relação entre educação e tecnologia, e por ser um tema aberto, teremos a presença de pesquisadores diversos, que serão agrupados, dentro das mesas temáticas, de acordo com a afinidade do tema de apresentação.
+Os resumos e trabalhos completos serão publicados nos anais do evento, além de existir a possibilidade dos considerados melhores trabalhos serem convidados a publicar capítulo de livro em Ebook.
+
+Sua participação será super bem vinda!
+
+Atenciosamente;
+Comissão Organizadora do I Seminário Educação e Tecnologia: Diálogos e Interfaces
+<strong>Contato: geovano.chaves@ifms.edu.br</strong></p>
+    </div>
+  </div>
+</div>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7"></script>
+<script src="https://kit.fontawesome.com/yourcode.js"></script>
+  <script type="text/javascript" src="../js/initializiation.js"></script>
+  <script type="text/javascript" src="../js/main.js"></script>  
+</body>
+</html>

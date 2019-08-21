@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sistema de Cadastro dos Trabalhos da Disciplina de Sistemas Distribuidos (SCTDSD)</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    </head>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Sistema de Cadastro dos Trabalhos da Disciplina de Sistemas Distribuidos
+                <div class="content">
+                    <br><br>
+                    <button id="btnAdd" class="button"><i class="fa fa-plus"></i>Adicionar</button>
+
+                </div>
+                <li><a href="index.html">Logout</a></li>  
+                <div id="card-list"  is-mobile">
+                </div>
+                
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-background"></div>
+                <div class="modal-card">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Tela de Cadastro</p>
+                        <button class="btnClose delete" aria-label="close"></button>
+                    </header>
+                    <section class="modal-card-body">
+                        <div class="field">
+                            <label class="label">Nome do Trabalho</label>
+                            <div class="control">
+                                <input type="hidden" id="txtType">
+                                <input type="hidden" id="txtKey">
+                                <input class="input" id="txtTrabalho" type="text" placeholder="Nome do Trabalho">
+                            </div>
+                            <p class="help"> </p>
+                        </div>
+                        <div class="field">
+                            <label class="label">Endereço no Github</label>
+                            <div class="control">
+                                <input class="input" id="txtGithub" type="text" placeholder="Endereço no Github">
+                            </div>
+                            <p class="help"> </p>
+                        </div>
+                        <div class="field">
+                            <label class="label">Linguagem de Programação</label>
+                            <div class="control">
+                                <input class="input" id="txtLinguagem" type="text" placeholder="Linguagem de Programação">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label class="label">Nome do Autor</label>
+                            <div class="control">
+                                <input class="input" id="txtAutor" type="text" placeholder="Nome do Autor">
+                            </div>
+                        </div>
+                        <p class="text-center">
+                            
+                            
+                        </section>
+                        <footer class="modal-card-foot">
+                            <button id="btnSave" class="button is-success">Salvar</button>
+                            <button id="btnClose" class="button">Cancelar</button>
+                        </footer>
+                    </div>
+                </div>
+            </section>
+            
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+            <script src="password.js"></script>
+            
+        </body>
+        </html>

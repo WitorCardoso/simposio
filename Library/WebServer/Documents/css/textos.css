@@ -1,0 +1,63 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+/* ==========================================================================
+   Parte da apresnetação do site
+   ========================================================================== */
+
+.apresentacao{
+  margin-top: 8%;
+  padding-top: 40px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+.apresentacao .callout{
+  margin-bottom: 20px;
+}
+.apresentacao p {
+  letter-spacing: 2px;
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: justify;
+}
+.apresentacao h3{
+  margin-top: 5%;
+  text-align: left;
+}
+/* ==========================================================================
+   Estilos dos textos
+   ========================================================================== */
+.apresentacao .active{
+    font-size: 29px;
+    color: #003F5D;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    margin: 0px;
+    line-height: 40px;
+    text-transform: inherit;
+}
+hr {
+    height: 1px;
+    margin-bottom: 1.5em;
+    border: 0;
+    background-color: #ccc;
+}
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+@media screen and (max-width: 768px){
+  .apresentacao{
+    margin-top: 12%;
+  }
+}

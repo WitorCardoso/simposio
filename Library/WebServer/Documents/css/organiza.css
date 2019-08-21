@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.dono-da-boca{
+  position: relative;
+  margin-top: 10%;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.card{
+  max-width: 450px;
+  width: 250px;
+  margin: 20px;
+  position: relative;
+  -webkit-transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all .6s cubic-bezier(0.165, 0.84, 0.44, 1)
+  }
+ .card:hover{
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+  }
+  img{
+    width: 100%;
+    height: 305px;
+    display: block;
+    object-fit: cover;
+  }
+  .image:before{
+    position: absolute;
+    content: '';
+    background-image: linear-gradient(-180deg, rgba(0,0,0,0.0) 34%, rgba(0,0,0,0.9) 100%);
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+  }
+
+.texto{
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 5;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    z-index: 10;
+  }
+  .titulo{
+    margin-bottom: 5px;
+    color: #fff;
+  }
+.funcao{
+  color: #fff;
+}
+.texto-titulo{
+  padding: 15px 10px;
+}
+.card.zoom:hover  .texto{
+      bottom: 40%;
+    }
+
+.card .imagem-sombra {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21,21,21,0.78);
+}
+
+.card.zoom .imagem-sombra {
+    z-index: 3;
+    opacity: 0;
+    -webkit-transition: all 5s cubic-bezier(0.21,1,0.12,1) 0s;
+    transition: all 5s cubic-bezier(0.21,1,0.12,1) 0s;
+}
+
+.card.zoom:hover .imagem-sombra {
+    opacity: 1;
+}
+@media screen and (max-width: 990px){
+  .dono-da-boca{
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 12%; 
+  }
+}
+@media screen and (max-width: 750px){
+  .dono-da-boca{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 500px){
+  .dono-da-boca{
+    grid-template-columns: 1fr;
+    margin-top: 18%;
+  }
+  .card{
+    width: 350px;
+    height: 400px;
+  }
+}

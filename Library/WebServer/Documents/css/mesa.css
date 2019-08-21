@@ -1,0 +1,149 @@
+body {
+	background: #fff;
+	position: relative;
+	padding: 170px 0;
+	margin: 0;
+}
+.mesa-up{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+.profile-card {
+	margin: 0 auto;
+	background :#fff;
+	width: 370px;
+	height: 418px;
+	z-index: 100;
+	box-shadow: 0 3px 10px rgba(55,55,55,0.3);
+}
+
+.profile-card,
+.profile-card header,
+.profile-card header img,
+.profile-card .profile-bio,
+.profile-card .profile-social-links {
+	overflow: hidden;
+	position: relative;
+	top: 0;
+	-webkit-transition: all .47s ease-out;
+	-moz-transition: all .47s ease-out;
+	-ms-transition: all .47s ease-out;
+	-o-transition: all .47s ease-out;
+	transition: all .47s ease-out;
+}
+
+.profile-card:hover header,
+.profile-card:hover .profile-bio,
+.profile-card:hover .profile-social-links {
+	top: -220px;
+}
+
+.profile-card header {
+	width: 100%;
+	max-height: 418px;
+}
+
+.profile-card header a:before {
+	content: '';
+	position: absolute;
+	z-index: 1;
+	top: 37%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0.57;
+	background: url(https://s32.postimg.org/vamjkty2d/batman.jpg);
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 1%, rgba(0,0,0,0.7) 1%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(13%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.7))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 13%,rgba(0,0,0,0.7) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 13%,rgba(0,0,0,0.7) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 13%,rgba(0,0,0,0.7) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 13%,rgba(0,0,0,0.7) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=0 ); /* IE6-8 */
+	-webkit-transition: all .47s ease-out;
+	-moz-transition: all .47s ease-out;
+	-ms-transition: all .47s ease-out;
+	-o-transition: all .47s ease-out;
+	transition: all .47s ease-out;
+}
+
+.profile-card:hover header a:before {
+	opacity: 1;
+}
+
+.profile-card header h1 {
+	margin-top: 20px;
+	margin-bottom: 0;
+	font-weight: 300;
+	letter-spacing: 3px;
+	font-size: 27px;
+	color: #fff;
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	position: absolute;
+	bottom: 55px;
+	left: 30px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.profile-card header h2 {
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-weight: 300;
+	letter-spacing: 0;
+	font-size: 14px;
+	color: #fff;
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+	z-index: 10;
+	cursor: pointer;
+}
+
+.profile-card header a {
+	display: block;
+	padding: 0;;
+	margin: 0;
+}
+
+.profile-card header img {
+	display: block;
+	width: 100%;
+	height: auto;
+	position: relative;
+	top: 0;
+}
+
+.profile-card:hover header img {
+	top: 170px;
+}
+
+.profile-bio p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: 0;
+	line-height: 27px;
+	color: #333;
+	text-align: left;
+	margin: 30px;
+}
+
+@media screen and (max-width: 1176px){
+	.profile-card{
+		margin:20px;
+	}
+}
+@media screen and (max-width: 900px){
+	.mesa-up{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}

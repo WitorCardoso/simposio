@@ -1,0 +1,43 @@
+ .tabla-documento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        margin-top: 80px;
+        border-collapse: collapse;
+        width: 100%;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.01em;
+        line-height: normal;
+    }
+
+        .tabla-documento td {
+            border: 1px solid #ddd;
+            padding: 7px;
+        }
+
+        .tabla-documento tr:hover {
+            background-color: #f9f9f9;
+        }
+
+        .tabla-documento .txt-center {
+            text-align: center;
+        }
+
+        .tabla-documento .titulo {
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .tabla-documento .bg-none {
+            background-color: transparent;
+        }
+
+        .tabla-documento .border-none {
+            border: none;
+        }
+
+        .tabla-documento .fecha-2-2 {
+            width: 190px;
+            text-align: center;
+        }
